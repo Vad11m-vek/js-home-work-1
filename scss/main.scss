@@ -1,0 +1,36 @@
+
+body {
+	background-color: gray;
+ }
+ 
+ .wraper_page_test {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+ }
+ 
+ .wraper_ol {
+	margin-top: 5px;
+	width: 60%;
+ }
+ 
+ .wraper_ol ol {
+	list-style-type: none;
+	counter-reset: item;
+ }
+ 
+ .wraper_ol ol li:before {
+	counter-increment: item;
+	/* Задаём имя счетчика */
+	content: counter(item) ") ";
+	/* Добавляем к числам скобку */
+ }
+ 
+ .out {
+	position: fixed;
+	top: 50%;
+	right: 5%;
+	width: 30%;
+ }
+
+ 
